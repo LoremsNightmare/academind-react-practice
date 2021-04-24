@@ -1,58 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from "./components/Expenses";
+
 
 function App() {
-
   let data = [
     {
-      title: 'olodama',
+      title: "Olodama",
       price: 290,
-      date: new Date(2021, 4, 20)
+      date: new Date(2021, 4, 20),
     },
     {
-      title: 'rasengan',
+      title: "Rasengan",
       price: 21290,
-      date: new Date(2021, 4, 21)
+      date: new Date(2021, 4, 21),
     },
     {
-      title: 'mangkyo',
+      title: "Mangkyo",
       price: 4325,
-      date: new Date(2021, 4, 22)
+      date: new Date(2021, 4, 22),
     },
     {
-      title: 'sharingan',
+      title: "Sharingan",
       price: 3465,
-      date: new Date(2021, 4, 23)
+      date: new Date(2021, 4, 23),
     },
-  ]
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ExpenseItem 
-          title ={data[0].title} 
-          price ={data[0].price}
-          date = {data[0].date}
-        ></ExpenseItem>
-        
-        <ExpenseItem 
-          title ={data[1].title} 
-          price ={data[1].price}
-          date = {data[1].date}
-        ></ExpenseItem>
-        <ExpenseItem 
-          title ={data[2].title} 
-          price ={data[2].price}
-          date = {data[2].date}
-        ></ExpenseItem>
-        <ExpenseItem 
-          title ={data[3].title} 
-          price ={data[3].price}
-          date = {data[3].date}
-        ></ExpenseItem>
-
-      </header>
+    <div>
+      <h1>Rough practicee</h1>
+      <Expenses items = {data}/>
     </div>
   );
 }

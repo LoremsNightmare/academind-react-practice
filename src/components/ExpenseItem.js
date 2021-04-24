@@ -1,25 +1,15 @@
-import React from 'react';
-
-const ExpenseItem = (props) => {
-
-  let {title, price} = props
-
-
+import ExpensesDate from "./ExpensesDate";
+import "./ExpenseItem.css";
+function ExpenseItem(props) {
   return (
-    <div style ={{
-      border: '2px solid red',
-      height: 'auto',
-      width: 'auto'
-      }}>
-      <h2 style={{
-        fontSize: '31px'
-      }}>{title}</h2>
-      <p>price: {price}</p>
-      <div>
-      <p >date: {props.date.toISOString()}</p>
+    <div className="expense-item">
+      <ExpensesDate data={props.date}></ExpensesDate>
+      <div className="expense-item__description">
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.price}</div>
       </div>
     </div>
   );
-};
+}
 
 export default ExpenseItem;
