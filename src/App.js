@@ -7,19 +7,23 @@ function App() {
   let data = [
     {
       title: 'olodama',
-      price: 290
+      price: 290,
+      date: new Date(2021, 4, 20)
     },
     {
       title: 'rasengan',
-      price: 21290
+      price: 21290,
+      date: new Date(2021, 4, 21)
     },
     {
       title: 'mangkyo',
-      price: 4325
+      price: 4325,
+      date: new Date(2021, 4, 22)
     },
     {
       title: 'sharingan',
-      price: 3465
+      price: 3465,
+      date: new Date(2021, 4, 23)
     },
   ]
   return (
@@ -29,19 +33,23 @@ function App() {
         <ExpenseItem 
           title ={data[0].title} 
           price ={data[0].price}
+          date = {data[0].date}
         ></ExpenseItem>
         
         <ExpenseItem 
           title ={data[1].title} 
           price ={data[1].price}
+          date = {data[1].date}
         ></ExpenseItem>
         <ExpenseItem 
           title ={data[2].title} 
           price ={data[2].price}
+          date = {data[2].date}
         ></ExpenseItem>
         <ExpenseItem 
           title ={data[3].title} 
           price ={data[3].price}
+          date = {data[3].date}
         ></ExpenseItem>
 
       </header>
